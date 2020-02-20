@@ -107,6 +107,7 @@ subscriptions:
       - built_in:tag_docker_image
       - built_in:publish_rubygems
       - built_in:notify_chefio_slack_channels
+      - bash:.expeditor/scripts/create_github_release.sh
 
   # the habitat chain
   - workload: buildkite_hab_build_group_published:{{agent_id}}:*
